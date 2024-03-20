@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Magical Cat Rescue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       background-color: #222;
       color: #fff;
       margin: 0;
@@ -16,13 +17,28 @@
       margin: 0;
       padding: 0;
     }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      p {
+        font-size: 4vh;
+      }
+    }
   </style>
 </head>
 <body>
   <p class="text-center">
     <img src="IdCOZv.png" width="500">
   </p>
-<br>
+  <br>
   <p class="text-center">
     Premium Version
   </p>
