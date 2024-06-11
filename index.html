@@ -21,8 +21,23 @@
     .footer {
       font-size: 0.8em;
       color: #bdc3c7;
+      margin-top: 20px;
     }
-    
+
+    .game-link {
+      display: inline-block;
+      position: relative;
+    }
+
+    .game-image {
+      transition: transform 0.3s ease;
+      width: 250px;
+    }
+
+    .game-link:hover .game-image {
+      transform: scale(1.1);
+    }
+
     @media (max-width: 480px) {
       body {
         padding: 10px;
@@ -36,32 +51,36 @@
       p {
         font-size: 4vh;
       }
+
+      .game-image {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <p class="text-center">
-    <img src="IdCOZv.png" width="500">
+    <img src="IdCOZv.png" width="500" alt="Magical Cat Rescue">
   </p>
   <br>
   <p class="text-center">
     Premium Version
   </p>
   <p class="text-center">
-    <a href="https://play.google.com/store/apps/details?id=com.ccg.magicalcatrescue" style="position: relative; display: inline-block;" target="_blank">
-      <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" title="Get it on Google Play" width="250">
+    <a href="https://play.google.com/store/apps/details?id=com.ccg.magicalcatrescue" class="game-link" target="_blank">
+      <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" title="Get it on Google Play" class="game-image">
     </a>
   </p>
   <p class="text-center">
     Free Version
   </p>
   <p class="text-center">
-    <a href="https://play.google.com/store/apps/details?id=com.ccg.magicalcatrescuee" style="position: relative; display: inline-block;" target="_blank">
-      <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" title="Get it on Google Play" width="250">
+    <a href="https://play.google.com/store/apps/details?id=com.ccg.magicalcatrescuee" class="game-link" target="_blank">
+      <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" title="Get it on Google Play" class="game-image">
     </a>
   </p>
-    <div class="footer">
-      &copy; 2024 Crying Cupcake Games. All rights reserved.
-    </div>
+  <div class="footer">
+    &copy; 2024 Crying Cupcake Games. All rights reserved.
+  </div>
 </body>
 </html>
